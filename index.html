@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="navbar">
+        <a href="#home" class="active">File List</a>
+        <a href="#upload">Upload File</a>
+        <!-- Additional tabs can be added here -->
+    </div>
+
+    <div class="upload-container">
+        <button id="uploadBtn" class="upload-button">Upload File</button>
+        <input type="text" id="searchInput" class="search-input" placeholder="Search Files">
+        <button id="searchBtn" class="search-button">Search</button>
+    </div>
+
+    <table class="files-table">
+        <tr>
+            <th>ID</th>
+            <th>File Name</th>
+            <th>Storage Location</th>
+            <th>Action</th>
+        </tr>
+        <!-- Table rows for file data will be inserted here -->
+    </table>
+
+    <progress id="uploadProgress" value="0" max="100" class="upload-progress"></progress>
+
+    <script src="script.js"></script>
+
+    <!-- Add a tbody element where the file list will be rendered -->
+    <tbody id="fileList">
+    <!-- File rows will be added here by JavaScript -->
+    </tbody>
+
+</body>
+</html>
